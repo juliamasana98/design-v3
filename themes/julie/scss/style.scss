@@ -1,0 +1,55 @@
+@import '../../shared/fontawesome/scss/fontawesome';
+$fa-font-path: '../../shared/fontawesome/webfonts';
+@import '../../shared/fontawesome/scss/brands';
+@import '../../shared/fontawesome/scss/solid';
+@import '../../shared/fontawesome/scss/regular';
+@import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@700&display=swap');
+@import '../../node_modules/normalize.css/normalize';
+@import 'variables';
+@import 'blockquotes';
+@import 'code';
+@import 'base';
+
+body {
+    background-color: $background-color;
+}
+
+* {
+    color: $font-color;
+}
+
+img {
+    max-width: $max-image-width;
+}
+
+p, h1 {
+    text-align: auto;
+    max-width: 60%;    
+    margin: 0 auto;     
+    line-height: 2;     
+    margin-bottom: 30px;
+    font-family: 'DM Serif Display', serif;
+}
+
+.nav a {
+    font-size: 1rem;
+    text-decoration: none;
+    color: hsl(0, 0%, 100%);
+    font-style: italic;
+
+    &:hover { 
+        border-bottom: 4px solid rgb(127, 105, 226);
+    }
+}
+
+.nav li:first-child {
+    background-color: #87c04b;
+}
+
+.nav li:last-child {
+    background-color: #756fec;
+}
+
+.nav li:hover {
+    background-color: #fc9b9b;
+}

@@ -1,8 +1,12 @@
 ---
 Logo: image/heart.png
-Tagline: Julia.
+Tagline: Min portfolio för design-kursen.
 Social:
-    - title: Link till sidans github repo.
+    - title: Länk till sidans github repo.
       url: https://github.com/juliamasana98
-      icon: github
+      icon: fab fa-github
+
+    - title: Länk till min linkedin
+      url: https://www.linkedin.com/in/julia-masana-977921202/
+      icon: fab fa-linkedin
 ---
