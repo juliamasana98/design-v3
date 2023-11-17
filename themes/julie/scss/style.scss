@@ -9,6 +9,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'blockquotes';
 @import 'code';
 @import 'base';
+@import 'technologies';
 
 body {
     background-color: $background-color;
@@ -24,11 +25,19 @@ img {
 
 p, h1 {
     text-align: auto;
-    max-width: 60%;    
+    max-width: 100%;    
     margin: 0 auto;     
     line-height: 2;     
     margin-bottom: 30px;
     font-family: 'DM Serif Display', serif;
+    margin-left: 0;
+}
+@media (max-width: 767px) {
+ul {
+    margin:0px;
+    padding:0px;
+    display: none;
+}
 }
 
 .nav a {
@@ -36,14 +45,26 @@ p, h1 {
     text-decoration: none;
     color: hsl(0, 0%, 100%);
     font-style: italic;
+    padding: 15px;
 
     &:hover { 
         border-bottom: 4px solid rgb(127, 105, 226);
     }
 }
-
 .nav li:first-child {
     background-color: #87c04b;
+}
+
+.nav li:nth-child(2) {
+    background-color: #eddd64ef;
+}
+
+.nav li:nth-child(3) {
+    background-color: #f3b35bef;
+}
+
+.nav li:nth-child(4) {
+    background-color: #f35b5bef;
 }
 
 .nav li:last-child {
