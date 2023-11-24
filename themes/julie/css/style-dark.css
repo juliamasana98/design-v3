@@ -3,6 +3,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 .fa,
 .fas,
 .far,
@@ -6426,7 +6427,7 @@ blockquote {
   font-style: arial;
   margin-left: 1em;
   padding-left: 1em;
-  border-left: 0.5em solid #ffffff;
+  border-left: 0.5em solid #000000;
 }
 
 code {
@@ -6607,7 +6608,7 @@ div {
 }
 
 body {
-  background-color: #ffffff;
+  background-color: #000000;
 }
 
 h5 {
@@ -6623,102 +6624,51 @@ img {
   max-width: 60%;
 }
 
-* {
-  color: white;
-  box-sizing: border-box;
-  padding-right: 0%;
-}
-
 .main {
   width: 64em;
   margin: 0 auto;
   flex: 1 0 auto;
 }
 
-@media (max-width: 767px) {
-  .menu {
-    display: none;
-  }
-  .main {
-    width: 100%;
-  }
-  .header {
-    flex-direction: column;
-  }
-  .nav ul {
-    flex-direction: column;
-    padding-bottom: 1em;
-  }
-  .nav ul li {
-    display: flex;
-    flex-direction: column;
-    text-align: center;
-  }
-  .nav ul li a {
-    display: block;
-    padding: 0.5em 0;
-  }
-  .js .nav-toggle {
-    display: block;
-    float: right;
-    width: 2em;
-    margin: 0.6667em 0;
-    font-size: 1.5rem;
-    line-height: 2em;
-    text-align: center;
-    cursor: pointer;
-  }
+* {
+  color: #000000;
 }
-p, h1, h2, h3 {
+
+p, h1 {
   text-align: left;
-  max-width: 900px;
+  max-width: 600px;
   margin: 0 auto;
   line-height: 2;
   margin-bottom: 30px;
   font-family: "DM Serif Display", serif;
   margin-left: 0%;
-  color: #FFC1D5;
+  color: #fff;
 }
 
 .nav li:first-child {
-  background-color: #ffffff;
+  background-color: #87c04b;
 }
 
 .nav li:nth-child(2) {
-  background-color: #ffffff;
+  background-color: rgba(237, 221, 100, 0.937254902);
 }
 
 .nav li:nth-child(3) {
-  background-color: #ffffff;
+  background-color: rgba(243, 179, 91, 0.937254902);
 }
 
 .nav li:nth-child(4) {
-  background-color: #ffffff;
-}
-
-.nav li:nth-child(5) {
-  background-color: #ffffff;
+  background-color: rgba(243, 91, 91, 0.937254902);
 }
 
 .nav li:last-child {
-  background-color: #ffffff;
+  background-color: #756fec;
 }
 
 .nav li:hover {
-  background-color: #FFC1D5;
+  background-color: #fc9b9b;
 }
 
 .header, .footer, .side-bar {
   padding: 1em;
-}
-
-.single-technology {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.menu {
-  display: flex;
 }

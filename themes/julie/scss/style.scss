@@ -10,67 +10,122 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 @import 'code';
 @import 'base';
 @import 'technologies';
+@import 'typography';
 
-body {
-    background-color: $background-color;
-}
 
 * {
-    color: $font-color;
+    color: #ffe5f2;
+    box-sizing: border-box;
+    padding-right: 0%;
 }
-
-img {
-    max-width: $max-image-width;
+.main {
+    width: 64em;
+    margin: 0 auto;
+    flex: 1 0 auto
 }
+@media (max-width: 767px) {
+    .menu {
+        display: none;
+    }
+    .main {
+        width:100%
+    
+    }
+        .header {
+        flex-direction: column;
+    }
 
-p, h1 {
-    text-align: auto;
-    max-width: 100%;    
+    .nav ul {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .js .nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
+
+}
+p, h1, h2, h3 {
+    text-align: left;
+    max-width: 900px;    
     margin: 0 auto;     
     line-height: 2;     
     margin-bottom: 30px;
     font-family: 'DM Serif Display', serif;
-    margin-left: 0;
+    margin-left: 0%;
+    color: #343333;
 }
-@media (max-width: 767px) {
-ul {
-    margin:0px;
-    padding:0px;
-    display: none;
-}
+h5, a {
+    text-align: left;
+    max-width: 900px;    
+    margin: 0 auto;     
+    line-height: 2;     
+    margin-bottom: 30px;
+    font-family: 'DM Serif Display', serif;
+    margin-left: 0%;
+    color: #343333;
 }
 
-.nav a {
-    font-size: 1rem;
-    text-decoration: none;
-    color: hsl(0, 0%, 100%);
-    font-style: italic;
-    padding: 15px;
 
-    &:hover { 
-        border-bottom: 4px solid rgb(127, 105, 226);
-    }
-}
 .nav li:first-child {
-    background-color: #87c04b;
+    background-color: #ffffff;
 }
 
 .nav li:nth-child(2) {
-    background-color: #eddd64ef;
+    background-color: #ffffff;
 }
 
 .nav li:nth-child(3) {
-    background-color: #f3b35bef;
+    background-color: #ffffff;
 }
 
 .nav li:nth-child(4) {
-    background-color: #f35b5bef;
+    background-color: #ffffff
+}
+
+.nav li:nth-child(5) {
+    background-color: #ffffff;
 }
 
 .nav li:last-child {
-    background-color: #756fec;
+    background-color: #ffffff;
 }
 
 .nav li:hover {
-    background-color: #fc9b9b;
+    background-color: #FFC1D5;
+}
+
+.header, .footer, .side-bar {
+    padding: 1em;
+}
+
+.single {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start
+}
+.single-technology {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
 }

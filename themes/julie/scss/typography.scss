@@ -1,0 +1,16 @@
+body {
+    background-color: $background-color
+}
+
+h5 {
+    text-align: left;
+    max-width: 60%;
+    margin: 0 auto;
+    line-height: 2;
+    margin-bottom: 30px;
+    font-family: 'DM Serif Display', serif;
+}
+
+img {
+    max-width: $max-image-width;
+}

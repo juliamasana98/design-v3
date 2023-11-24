@@ -7,10 +7,17 @@
     "example": "example"
   },
   "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
     "lint": "stylelint \"**/*.scss\"",
-    "style": "sass julie/scss/style.scss julie/css/style.css --no-source-map",
-    "style-min": "sass julie/scss/style.scss julie/css/style.min.css --no-source-map --style compressed"
-  },
+    "watch": "sass julie/scss/style.scss:julie/css/style.css julie/scss/style-dark.scss:julie/css/style-dark.css --no-source-map --watch",
+    "watch-min": "sass julie/scss/style.scss:julie/css/style.min.css julie/scss/style-dark.scss:julie/css/style-dark.min.css --no-source-map --watch --style compressed",
+    "style": "npm run style-light && npm run style-dark",
+    "style-min": "npm run style-light-min && npm run style-dark-min",
+    "style-dark": "sass julie/scss/style-dark.scss julie/css/style-dark.css --no-source-map",
+    "style-dark-min": "sass julie/scss/style-dark.scss julie/css/style-dark.min.css --no-source-map --style compressed",
+    "style-light": "sass julie/scss/style.scss julie/css/style.css --no-source-map",
+    "style-light-min": "sass julie/scss/style.scss julie/css/style.min.css --no-source-map --style compressed"
+},
 
   "author": "",
   "license": "ISC",
