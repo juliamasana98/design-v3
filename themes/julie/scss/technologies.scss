@@ -117,7 +117,8 @@ ul {
 }
 
 li {
-    display: list-item;
+    list-style-type: square;
+    font-family: $primary-font;
 }
 }
 

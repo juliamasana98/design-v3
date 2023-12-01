@@ -3,6 +3,7 @@
  * License - https://fontawesome.com/license/free (Icons: CC BY 4.0, Fonts: SIL OFL 1.1, Code: MIT License)
  */
 @import url("https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@700&display=swap");
+@import url("https://fonts.googleapis.com/css2?family=BioRhyme&display=swap");
 @import url("https://fonts.googleapis.com/css2?family=Slabo+27px&display=swap");
 .fa,
 .fas,
@@ -6536,13 +6537,13 @@ pre code {
 
 .main, .footer, .side-bar {
   padding: 1em;
-  border: 3px solid #FFC1D5;
+  border: 3px solid #ffcde6;
 }
 
 .header {
   padding: 1em;
-  border: 3px solid #f4f4f4;
-  background-color: #FF86AE;
+  border: 3px solid #ffcde6;
+  background-color: #ffb3d9;
 }
 
 .header-container {
@@ -6557,7 +6558,7 @@ pre code {
 
 /* --------------- Footer --------------- */
 .footer {
-  background-color: #1a1c1a;
+  background-color: #90868b;
   grid-column: span 3; /* Adjusted to span the full width */
 }
 
@@ -6578,33 +6579,20 @@ pre code {
   padding-inline-start: 20px;
   margin: 0px;
   padding: 0px;
+  background-color: #ff8dc6;
 }
 .nav li {
-  display: list-item;
+  list-style-type: square;
+  font-family: "BioRhyme", serif;
 }
 
-div {
-  margin-top: 0;
+.content {
+  padding: 20%;
 }
 
-.single-technology {
-  display: flex;
-  flex-direction: row;
-  justify-content: space-between;
-  align-items: flex-start;
-}
-
-.technology.main .single {
-  display: flex;
-  gap: 1rem;
-}
-
-.technology aside {
-  padding: 1em;
-}
-.technology aside ul {
-  list-style: none;
-  padding-inline-start: 0;
+.footer a {
+  color: #ff8dc6;
+  text-decoration: none;
 }
 
 body {
@@ -6631,7 +6619,7 @@ img {
 }
 
 * {
-  color: #000000;
+  color: white;
 }
 
 p, h1 {
@@ -6640,35 +6628,78 @@ p, h1 {
   margin: 0 auto;
   line-height: 2;
   margin-bottom: 30px;
-  font-family: "DM Serif Display", serif;
+  font-family: "BioRhyme", serif;
   margin-left: 0%;
-  color: #fff;
+  color: white;
 }
 
 .nav li:first-child {
-  background-color: #87c04b;
+  background-color: #767575;
 }
 
 .nav li:nth-child(2) {
-  background-color: rgba(237, 221, 100, 0.937254902);
+  background-color: #918f8f;
 }
 
 .nav li:nth-child(3) {
-  background-color: rgba(243, 179, 91, 0.937254902);
+  background-color: #a2a0a0;
 }
 
 .nav li:nth-child(4) {
-  background-color: rgba(243, 91, 91, 0.937254902);
+  background-color: rgba(190, 186, 186, 0.937);
+}
+
+.nav li:nth-child(5) {
+  background-color: #dddada;
 }
 
 .nav li:last-child {
-  background-color: #756fec;
+  background-color: #ffffff;
 }
 
 .nav li:hover {
-  background-color: #fc9b9b;
+  background-color: rgb(248, 245, 245);
 }
 
 .header, .footer, .side-bar {
   padding: 1em;
+}
+
+.main, .footer, .side-bar {
+  padding: 1em;
+  border: 3px solid #413c3f;
+}
+
+.header {
+  padding: 1em;
+  border: 3px solid #413c3f;
+  background-color: #413c3f;
+}
+
+.header-container {
+  background-color: #413c3f;
+  border-block-end: 1px solid #413c3f;
+}
+
+.title-box {
+  grid-column: span 3;
+  background-color: #767575;
+  color: #fff;
+  padding: 10px;
+  text-align: center;
+  max-width: 60%;
+}
+
+.box {
+  display: block;
+  text-decoration: none;
+  color: #ffffff;
+  padding: 1rem;
+  text-align: center;
+  background-color: #767575;
+  border: 1px solid #ffffff;
+}
+
+img {
+  filter: drop-shadow(16px 16px 20px red) invert(75%);
 }

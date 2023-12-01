@@ -1,37 +1,50 @@
+/* Font Awesome */
 @import '../../shared/fontawesome/scss/fontawesome';
 $fa-font-path: '../../shared/fontawesome/webfonts';
 @import '../../shared/fontawesome/scss/brands';
 @import '../../shared/fontawesome/scss/solid';
 @import '../../shared/fontawesome/scss/regular';
+
+/* Google Fonts */
 @import url('https://fonts.googleapis.com/css2?family=DM+Serif+Display&family=Lato:wght@700&display=swap');
+
+/* Normalize CSS */
 @import '../../node_modules/normalize.css/normalize';
+
+/* Custom Stylesheets */
 @import 'variables';
 @import 'blockquotes';
 @import 'code';
 @import 'base';
 @import 'technologies';
 @import 'typography';
+@import 'gallery';
 
-
+/* Global Reset */
 * {
     color: #ffe5f2;
     box-sizing: border-box;
-    padding-right: 0%;
+    padding-right: 0;
 }
+
+/* Main Container */
 .main {
     width: 64em;
     margin: 0 auto;
-    flex: 1 0 auto
+    flex: 1 0 auto;
 }
+
+/* Responsive Design */
 @media (max-width: 767px) {
-    .menu {
+    .menu, .header, .nav ul li a {
         display: none;
     }
+
     .main {
-        width:100%
-    
+        width: 100%;
     }
-        .header {
+
+    .header {
         flex-direction: column;
     }
 
@@ -61,51 +74,22 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
         text-align: center;
         cursor: pointer;
     }
+}
 
-}
-p, h1, h2, h3 {
+/* Common Styles for Text Elements */
+p, h1, h2, h3, h5, a {
     text-align: left;
-    max-width: 900px;    
-    margin: 0 auto;     
-    line-height: 2;     
+    max-width: 900px;
+    margin: 0 auto;
+    line-height: 2;
     margin-bottom: 30px;
     font-family: 'DM Serif Display', serif;
-    margin-left: 0%;
-    color: #343333;
-}
-h5, a {
-    text-align: left;
-    max-width: 900px;    
-    margin: 0 auto;     
-    line-height: 2;     
-    margin-bottom: 30px;
-    font-family: 'DM Serif Display', serif;
-    margin-left: 0%;
+    margin-left: 0;
     color: #343333;
 }
 
-
-.nav li:first-child {
-    background-color: #ffffff;
-}
-
-.nav li:nth-child(2) {
-    background-color: #ffffff;
-}
-
-.nav li:nth-child(3) {
-    background-color: #ffffff;
-}
-
-.nav li:nth-child(4) {
-    background-color: #ffffff
-}
-
-.nav li:nth-child(5) {
-    background-color: #ffffff;
-}
-
-.nav li:last-child {
+/* Navigation Styling */
+.nav li {
     background-color: #ffffff;
 }
 
@@ -113,19 +97,67 @@ h5, a {
     background-color: #FFC1D5;
 }
 
+/* Padding for Header, Footer, and Side-bar */
 .header, .footer, .side-bar {
     padding: 1em;
 }
 
-.single {
-    display: flex;
-    flex-direction: row;
-    justify-content: space-between;
-    align-items: flex-start
-}
-.single-technology {
+/* Single and Single-Technology Styles */
+.single, .single-technology {
     display: flex;
     flex-direction: row;
     justify-content: space-between;
     align-items: flex-start;
+}
+
+/* List Styles */
+ul, ol, li {
+    text-align: left;
+    max-width: 900px;
+    margin-right: auto;
+    margin-bottom: 30px;
+    font-family: 'DM Serif Display', serif;
+    color: #343333;
+}
+
+li a {
+    line-height: 0;
+    margin-left: 20px;
+    color: #343333;
+    text-decoration: none;
+}
+
+li a:hover {
+    color: #ffbeec;
+}
+
+/* Ordered List Styles */
+ol {
+    counter-reset: my-counter;
+    list-style-type: none;
+    margin-left: 20px;
+    font-family: 'DM Serif Display', serif;
+    color: #343333;
+    line-height: 2;
+}
+
+ol li {
+    margin-bottom: 50px;
+}
+
+ol li::before {
+    content: counter(my-counter);
+    counter-increment: my-counter;
+    position: relative;
+    left: -2em;
+    font-weight: bold;
+    color: #343333;
+}
+
+/* Iframe Styles */
+iframe {
+    width: 100%;
+    height: 200px;
+    border: 1px solid #ccc;
+    border-radius: 8px;
 }
