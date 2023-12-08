@@ -1,6 +1,6 @@
 ---
 Logo: image/heart.png
-Tagline: Min portfolio för design-kursen.
+Tagline: My portfolio
 Social:
     - title: Länk till sidans github repo.
       url: https://github.com/juliamasana98

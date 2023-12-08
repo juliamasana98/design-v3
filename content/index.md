@@ -1,5 +1,5 @@
 ---
-Title: Julia Forsberg
+Title: Julia
 Description: This is our index page.
 ---
 

@@ -22,7 +22,7 @@ $fa-font-path: '../../shared/fontawesome/webfonts';
 }
 
 * {
-    color: #ffff;
+    color: #000000;
 }
 
 p, h1 {
@@ -54,6 +54,9 @@ p, h1 {
     background-color: rgba(190, 186, 186, 0.937)
 }
 .nav li:nth-child(5) {
+    background-color: #dddada
+}
+.nav li:nth-child(6) {
     background-color: #dddada
 }
 
@@ -104,4 +107,49 @@ p, h1 {
 
 img {
     filter: drop-shadow(16px 16px 20px red) invert(75%);
+}
+.footer {
+background-color: #413c3f;
+}
+
+/* Responsive Design */
+@media (max-width: 767px) {
+    .menu, .header, .nav ul li a {
+        display: none;
+    }
+
+    .main {
+        width: 100%;
+    }
+
+    .header {
+        flex-direction: column;
+    }
+
+    .nav ul {
+        flex-direction: column;
+        padding-bottom: 1em;
+    }
+
+    .nav ul li {
+        display: flex;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .nav ul li a {
+        display: block;
+        padding: 0.5em 0;
+    }
+
+    .js .nav-toggle {
+        display: block;
+        float: right;
+        width: 2em;
+        margin: 0.6667em 0;
+        font-size: 1.5rem;
+        line-height: 2em;
+        text-align: center;
+        cursor: pointer;
+    }
 }
